@@ -1,0 +1,30 @@
+{
+  "name": "book-list",
+  "version": "1.0.0",
+  "description": "Develop base on React-Apollo-GraphQL tutorial at Netninja",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosTuyen/book-list.git"
+  },
+  "author": "Tuyen Do",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JosTuyen/book-list/issues"
+  },
+  "homepage": "https://github.com/JosTuyen/book-list#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "mongoose": "^5.4.1"
+  }
+}
